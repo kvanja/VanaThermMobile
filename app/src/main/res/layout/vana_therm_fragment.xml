@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vanatherm.VanaThermFragment">
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/city"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/ivWeatherIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivWeatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/weatherStatus"
+        android:src="@drawable/ic_01d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCity" />
+
+    <TextView
+        android:id="@+id/tvWeatherStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weatherStatus"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/tvCityTemp"
+        app:layout_constraintEnd_toEndOf="@id/ivWeatherIcon"
+        app:layout_constraintStart_toStartOf="@id/ivWeatherIcon"
+        app:layout_constraintTop_toBottomOf="@id/ivWeatherIcon" />
+
+    <TextView
+        android:id="@+id/tvCityTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:text="@string/cityTemp"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/spinBuildings"
+        app:layout_constraintEnd_toEndOf="@id/tvWeatherStatus"
+        app:layout_constraintStart_toStartOf="@id/tvWeatherStatus"
+        app:layout_constraintTop_toBottomOf="@id/tvWeatherStatus"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <Spinner
+        android:id="@+id/spinBuildings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityTemp" />
+
+    <Spinner
+        android:id="@+id/spinFloors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/spinRooms"
+        app:layout_constraintEnd_toStartOf="@id/spinRooms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/spinRooms" />
+
+    <Spinner
+        android:id="@+id/spinRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@id/spinDevices"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/spinFloors"
+        app:layout_constraintTop_toBottomOf="@id/spinBuildings" />
+
+    <Spinner
+        android:id="@+id/spinDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/spinRooms"
+        app:layout_constraintStart_toEndOf="@id/spinRooms"
+        app:layout_constraintTop_toTopOf="@id/spinRooms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/temperature"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvHumidity"
+        app:layout_constraintTop_toBottomOf="@id/spinRooms" />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/humidity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@id/tvTemperature"
+        app:layout_constraintTop_toTopOf="@id/tvTemperature"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvTemperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/cityTemp"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/tvTemperature"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@id/tvTemperature"
+        app:layout_constraintTop_toBottomOf="@id/tvTemperature" />
+
+    <TextView
+        android:id="@+id/tvHumidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/humidityValue"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/tvHumidity"
+        app:layout_constraintStart_toStartOf="@id/tvHumidity"
+        app:layout_constraintTop_toBottomOf="@id/tvHumidity" />
+
+
+    <SeekBar
+        android:id="@+id/sbAdjustTemp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="30"
+        android:min="0"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvTemperature"
+        app:layout_constraintTop_toBottomOf="@id/tvTemperatureValue"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <Button
+        android:id="@+id/btnDecrease"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/decrease"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/btnIncrease"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="@id/sbAdjustTemp"
+        app:layout_constraintTop_toBottomOf="@id/sbAdjustTemp" />
+
+    <EditText
+        android:id="@+id/etTemperature"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="false"
+        android:gravity="center"
+        android:hint="@string/cityTemp"
+        android:inputType="number"
+        android:textColorHint="@color/heating_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnDecrease"
+        app:layout_constraintEnd_toStartOf="@id/btnIncrease"
+        app:layout_constraintStart_toEndOf="@id/btnDecrease"
+        app:layout_constraintTop_toTopOf="@id/btnDecrease" />
+
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/increase"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnDecrease"
+        app:layout_constraintEnd_toEndOf="@id/sbAdjustTemp"
+        app:layout_constraintStart_toEndOf="@id/etTemperature"
+        app:layout_constraintTop_toTopOf="@id/btnDecrease"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnSet"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnIncrease"
+        app:layout_constraintStart_toEndOf="@id/btnIncrease"
+        app:layout_constraintEnd_toEndOf="@id/tvDesiredTemp"
+        app:layout_constraintTop_toTopOf="@id/btnIncrease"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvDesiredTemp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/cityTemp"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/sbAdjustTemp"
+        app:layout_constraintStart_toEndOf="@+id/sbAdjustTemp"
+        app:layout_constraintTop_toTopOf="@id/sbAdjustTemp"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <Button
+        android:id="@+id/btnClearPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/ivWeatherIcon"
+        app:layout_constraintEnd_toStartOf="@id/ivWeatherIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivWeatherIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

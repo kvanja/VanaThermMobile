@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/et_custom"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvBuildingName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/buildingName"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rvTvCity"
+        android:text="@string/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvBuildingName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvStreet" />
+
+    <TextView
+        android:id="@+id/tvStreet"
+        android:text="@string/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/rvTvCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rvTvCity"
+        app:layout_constraintBottom_toBottomOf="@id/rvTvCity" />
+
+    <TextView
+        android:id="@+id/tvFloor"
+        android:layout_width="wrap_content"
+        android:text="@string/floor"
+        app:layout_constraintTop_toBottomOf="@id/rvTvCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvRoomName"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvRoomName"
+        android:layout_width="wrap_content"
+        android:text="@string/roomName"
+        app:layout_constraintTop_toTopOf="@id/tvFloor"
+        app:layout_constraintStart_toEndOf="@id/tvFloor"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFloor"
+        app:layout_constraintBottom_toTopOf="@id/tvTimeFrom"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimeFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeFrom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintBottom_toTopOf="@id/tvAtmTemperature"
+        app:layout_constraintEnd_toStartOf="@id/tvTimeTo" />
+
+    <TextView
+        android:id="@+id/tvTimeTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeTo"
+        app:layout_constraintStart_toEndOf="@id/tvTimeFrom"
+        app:layout_constraintTop_toTopOf="@id/tvTimeFrom"
+        app:layout_constraintBottom_toBottomOf="@id/tvTimeFrom"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAtmTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atmTemperature"
+        app:layout_constraintTop_toBottomOf="@id/tvTimeFrom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvDesiredTemp" />
+
+    <TextView
+        android:id="@+id/tvDesiredTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desiredTemperature"
+        app:layout_constraintStart_toEndOf="@id/tvAtmTemperature"
+        app:layout_constraintTop_toTopOf="@id/tvAtmTemperature"
+        app:layout_constraintBottom_toBottomOf="@id/tvAtmTemperature"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miVanaTherm"
+        android:title="@string/vanaTherm"
+        android:icon="@drawable/app_icon" />
+
+    <item
+        android:id="@+id/miHeatingHistory"
+        android:title="@string/heatingHistory"
+        android:icon="@drawable/ic_heating_history3" />
+
+    <item
+        android:id="@+id/miHeatingBills"
+        android:title="@string/heatingBills"
+        android:icon="@drawable/ic_heating_bills" />
+</menu>

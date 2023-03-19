@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VanaTherm</string>
+    <string name="logout">Odjavite se</string>
+    <string name="login">Prijavite se</string>
+    <string name="email">Epošta</string>
+    <string name="emailOrUsername">Epošta/Korisničko ime</string>
+    <string name="username">Korisničko ime</string>
+    <string name="password">Zaporka</string>
+    <string name="signUp">Nemate korisnički račun?<font color="#AC0C0C"><b> Sign up</b></font></string>
+    <string name="forgotPwd"><b>Zaboravili ste lozinku?</b></string>
+    <string name="welcome">"Dobrodošli! "</string>
+    <string name="invalid_username">Nepravilno korisničko ime</string>
+    <string name="invalid_password">Lozinka mora biti >3 znaka</string>
+    <string name="login_failed">Prijava neuspješna, molimo provjerite unešene podatke</string>
+    <string name="api_error">Greška, molimo pokušajte ponovo</string>
+    <string name="login_data_empty">Podatci ne smiju biti prazni</string>
+    <string name="error">Greška, molimo kontaktirajte programera aplikacije</string>
+    <string name="city">Grad</string>
+    <string name="temperature">Temperatura</string>
+    <string name="humidity">Vlažnost</string>
+    <string name="tempWatcher">Zgrada</string>
+    <string name="weatherStatus">Status vremena</string>
+    <string name="btnSet">Postavi</string>
+    <string name="vanaTherm">VanaTherm</string>
+    <string name="heatingHistory">Povijest grijanja</string>
+    <string name="heatingBills">Računi</string>
+    <string name="buildingName">Naziv zgrade:</string>
+    <string name="street">Ulica:</string>
+    <string name="floor">Kat:</string>
+    <string name="roomName">Naziv sobe:</string>
+    <string name="deviceId">id uređaja:</string>
+    <string name="date">Datum:</string>
+    <string name="timeFrom">Od:</string>
+    <string name="timeTo">Do:</string>
+    <string name="atmTemperature">Očitana temperatura:</string>
+    <string name="desiredTemperature">Željena temperatura:</string>
+    <string name="about">O aplikaciji VanaTherm</string>
+    <string name="author">Autor: Kristijan Vanja</string>
+    <string name="college">Fakultet: VUB</string>
+    <string name="subject">Predmet: Programiranje mobilnih aplikacija</string>
+    <string name="subjectYear">Godina: 2021</string>
+    <string name="professor">Profesori: Tomislav Adamović, Ante Javor</string>
+    <string name="appVersion">Verzija: 1.0</string>
+</resources>
